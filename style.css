@@ -13,7 +13,7 @@ font-family: 'Poppins', sans-serif;
 
 :root {
     --black: #171718;
-    --black-border: #171718;
+    --black-border: #26292D;
     --white: #fff;
     --purple: #5C62EC;
 
@@ -21,10 +21,13 @@ font-family: 'Poppins', sans-serif;
     --dark-border: var(--black-border);
     --header-text: var(--white);
     --accent: var(--purple);
+    --black-text: var(--black);
 }
 
 html, body {
     font-family: 'DM Sans', sans-serif;
+    letter-spacing: -0.5px;
+    color: var(--black-text)
 }
 
 /*NAV*/
@@ -34,6 +37,7 @@ html, body {
     border-bottom: 1px solid var(--black-border);
     background-color: var(--dark-bg);
     color: var(--header-text);
+    letter-spacing: normal;
 }
 
 .var-row {
@@ -81,3 +85,75 @@ html, body {
     width: 100%;
     background-color: var(--accent);
 }
+
+/*HEADER*/
+
+.header {
+    background-color: var(--dark-bg);
+    color: var(--header-text);
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 695px;
+    padding: 0 20px;
+
+    background-image: url(/img/Abstract.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto;
+}
+.header-wrapper {
+    padding: 0, 15px;
+    max-width: 660px;
+}
+.header-title {
+    margin-bottom: 20px;
+    font-size: 40px;
+    line-height: 1,4;
+}
+
+.header-title strong {
+    font-size: 60px;
+}
+
+.header-title em {
+    font-style: normal;
+    color: var(--accent);
+}
+
+.header-text {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.header-text + p {
+    margin-bottom: 20px;
+}
+.btn {
+    height: 48px;
+    padding: 12px 28px;
+
+    border-radius: 5px;
+    background-color: var(--accent);
+    color: var(--white);
+    letter-spacing: 0.15px;
+    font-size: 16px;
+    font-weight: 500;
+    
+    transition: opacity 0.2s ease-in;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn:active {
+    position: relative;
+    top: 1px;
+}
+
