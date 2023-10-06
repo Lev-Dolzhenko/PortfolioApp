@@ -34,6 +34,9 @@ html, body {
     margin: 70px 0;
 }
 
+.none {
+    display: none !important;
+}
 
 /*NAV*/
 
@@ -194,4 +197,36 @@ html, body {
     font-weight: 700;
     padding: 15px 20px 25px;
     color: var(--black-text);
+}
+
+/*FOOTER*/
+
+.footer {
+    background-color: var(--dark-bg);
+    color: var(--header-text);
+    padding: 60px 0 50px;
+}
+
+.footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 27px;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+    
+}
+
+.copyright {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.copyright p + p {
+    margin-bottom: 0.5em;
 }
