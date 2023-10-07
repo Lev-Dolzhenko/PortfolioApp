@@ -27,7 +27,8 @@ font-family: 'Poppins', sans-serif;
 html, body {
     font-family: 'DM Sans', sans-serif;
     letter-spacing: -0.5px;
-    color: var(--black-text)
+    color: var(--black-text);
+    
 }
 
 .section {
@@ -267,7 +268,10 @@ html, body {
 .content-list__item {
     font-size: 18px;
     line-height: 1.5;
+}
 
+.content-list__item a {
+    color: var(--accent);
 }
 
 /* FOOTER */
@@ -276,6 +280,7 @@ html, body {
     background-color: var(--dark-bg);
     color: var(--header-text);
     padding: 60px 0 50px;
+    
 }
 
 .footer__wrapper {
